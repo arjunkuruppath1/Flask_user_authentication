@@ -8,15 +8,16 @@
 </head>
 <body>
     <h1>Login Page</h1>
-
-    <form action="POST" action="">
-        {{ form.hidden_tag()}}
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
         {{ form.username }}
+        <br><br>
         {{ form.password }}
+        <br><br>
         {{ form.submit }}
     </form>
-
-    <a href="{{ url_for('register') }}">Don't have an account? Sign Up</a><br>
-
+    <h2><i>Don't have an acount ?</i>
+        <a href="{{url_for('register')}}">Register</a>
+    </h2>
 </body>
 </html>

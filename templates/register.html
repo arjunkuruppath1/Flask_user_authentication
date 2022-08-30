@@ -7,15 +7,18 @@
     <title>Register</title>
 </head>
 <body>
-    <h1>Register Page</h1>
-
-    <form action="POST" action="">
-        {{ form.hidden_tag()}}
+    <h1>Registration Pge</h1>
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
         {{ form.username }}
+        <br><br>
         {{ form.password }}
+        <br><br>
         {{ form.submit }}
     </form>
 
-    <a href="{{ url_for('login') }}">Allready have an account? Login</a><br>
+    <h2><i>Alredy have an acount ?</i>
+        <a href="{{url_for('login')}}">Login</a>
+    </h2>
 </body>
 </html>
